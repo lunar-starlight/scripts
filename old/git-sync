@@ -1,0 +1,4 @@
+git checkout $1
+git fetch upstream
+git merge upstream/$1
+git push origin

@@ -1,0 +1,3 @@
+sudo killall -9 kmonad
+sudo kmonad ~/.config/kmonad/mouse.kbd &
+sudo kmonad ~/.config/kmonad/kb.kbd &

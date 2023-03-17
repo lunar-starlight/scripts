@@ -1,0 +1,449 @@
+if EP <= 0 {
+    notify "Getting first eternity"
+    auto infinity 1e20x highest
+    auto eternity 0s
+    wait eternity
+    auto eternity off
+}
+
+notify "Preparing for ECs"
+auto infinity 2s
+if total TT < 150 {
+    notify "Farming TIM tree"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity 10s
+    while total TT < 150 {
+        studies respec
+        studies nowait purchase TIM
+        wait eternity
+    }
+    auto eternity off
+}
+
+auto infinity 1s
+
+if EC1 completions < 3 {
+    notify "Running EC1x3"
+    infinity
+    eternity respec
+    studies nowait purchase INF
+    auto eternity off
+    start EC1
+    wait pending completions >= 3
+    eternity
+}
+if EC2 completions < 2 {
+    notify "Running EC2x2"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity off
+    start EC2
+    wait pending completions >= 2
+    eternity
+}
+if EC3 completions < 3 {
+    notify "Running EC3x3"
+    infinity
+    eternity respec
+    studies nowait purchase ANT
+    auto eternity off
+    start EC3
+    wait pending completions >= 3
+    eternity
+}
+
+if total TT < 207 {
+    notify "Farming 207 total TT"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity 10s
+    wait total TT >= 207
+    auto eternity off
+}
+
+if EC4 completions < 3 {
+    notify "Running EC4x3"
+    infinity
+    eternity respec
+    studies nowait purchase IDL
+    auto eternity off
+    start EC4
+    wait pending completions >= 3
+    eternity
+}
+if EC6 completions < 3 {
+    notify "Running EC6x3"
+    infinity
+    eternity respec
+    studies nowait purchase INA
+    auto eternity off
+    start EC6
+    wait pending completions >= 3
+    eternity
+}
+
+if total TT < 252 {
+    notify "Farming 252 total TT"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity 10s
+    wait total TT >= 252
+    auto eternity off
+}
+
+if EC5 completions < 5 {
+    notify "Running EC5x5"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity off
+    start EC5
+    wait pending completions >= 5
+    eternity
+}
+if EC7 completions < 3 {
+    notify "Running EC7x3"
+    infinity
+    eternity respec
+    studies nowait purchase ANT
+    auto eternity off
+    start EC7
+    wait pending completions >= 3
+    eternity
+}
+
+if EC1 completions < 5 {
+    notify "Running EC1x5"
+    infinity
+    eternity respec
+    studies nowait purchase INF
+    auto eternity off
+    start EC1
+    wait pending completions >= 5
+    eternity
+}
+if EC2 completions < 5 {
+    notify "Running EC2x5"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity off
+    start EC2
+    wait pending completions >= 5
+    eternity
+}
+if EC3 completions < 5 {
+    notify "Running EC3x5"
+    infinity
+    eternity respec
+    studies nowait purchase ANT
+    auto eternity off
+    start EC3
+    wait pending completions >= 5
+    eternity
+}
+
+if total TT < 322 {
+    notify "Farming 322 total TT"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity 10s
+    wait total TT >= 322
+    auto eternity off
+}
+auto infinity off
+if total TT < 407 {
+    notify "Farming 407 total TT"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity 10s
+    wait total TT >= 407
+    auto eternity off
+}
+
+if EC4 completions < 5 {
+    notify "Running EC4x5"
+    infinity
+    eternity respec
+    studies nowait purchase IDL
+    auto eternity off
+    start EC4
+    wait pending completions >= 5
+    eternity
+}
+if EC6 completions < 5 {
+    notify "Running EC6x5"
+    infinity
+    eternity respec
+    studies nowait purchase INA
+    auto eternity off
+    start EC6
+    wait pending completions >= 5
+    eternity
+}
+if EC8 completions < 3 {
+    notify "Running EC8x3"
+    infinity
+    eternity respec
+    studies nowait purchase IDL
+    auto eternity off
+    start EC8
+    wait pending completions >= 3
+    eternity
+}
+
+if total TT < 547 {
+    notify "Farming 547 total TT"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity 10s
+    wait total TT >= 547
+    auto eternity off
+}
+
+auto infinity 1s
+if EC9 completions < 2 {
+    notify "Running EC9x2"
+    infinity
+    eternity respec
+    studies nowait purchase TIM9
+    auto eternity off
+    start EC9
+    wait pending completions >= 2
+    eternity
+}
+auto infinity off
+
+if total TT < 830 {
+    notify "Farming 830 total TT"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity 10s
+    wait total TT >= 830
+    auto eternity off
+}
+if EC8 completions < 5 {
+    notify "Running EC8x5"
+    infinity
+    eternity respec
+    studies nowait purchase IDL
+    auto eternity off
+    start EC8
+    wait pending completions >= 5
+    eternity
+}
+if EC9 completions < 5 {
+    notify "Running EC9x5"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity off
+    start EC9
+    wait pending completions >= 5
+    eternity
+}
+
+if total TT < 872 {
+    notify "Farming 872 total TT"
+    infinity
+    eternity respec
+    studies nowait purchase TIM
+    auto eternity 20s
+    wait total TT >= 872
+    auto eternity off
+}
+if EC10 completions < 1 {
+    notify "Running EC10x1"
+    infinity
+    eternity respec
+    studies nowait purchase ANT
+    auto eternity off
+    start EC10
+    wait pending completions >= 1
+    eternity
+}
+if EC7 completions < 5 {
+    notify "Running EC7x5"
+    infinity
+    eternity respec
+    studies nowait purchase ECVII
+    auto eternity off
+    start EC7
+    wait pending completions >= 5
+    eternity
+}
+
+if total TT < 2550 {
+    notify "Farming WIP tree"
+    infinity
+    eternity respec
+    studies nowait purchase WIP
+    auto eternity 10s
+    while total TT < 2550 {
+        studies respec
+        studies nowait purchase WIP
+        wait eternity
+    }
+    auto eternity off
+}
+if EC10 completions < 5 {
+    notify "Running EC10x5"
+    infinity
+    eternity respec
+    studies nowait purchase ECX
+    auto eternity off
+    start EC10
+    wait pending completions >= 5
+    eternity
+}
+if total TT < 8500 {
+    notify "Farming FULL tree"
+    infinity
+    eternity respec
+    studies nowait purchase FULL
+    auto eternity 10s
+    while total TT < 8500 {
+        studies respec
+        studies nowait purchase FULL
+        wait eternity
+    }
+    auto eternity off
+}
+
+if EC11 completions < 2 {
+    notify "Running EC11x2"
+    infinity
+    eternity respec
+    studies nowait purchase ECXI
+    auto eternity off
+    start EC11
+    wait pending completions >= 2
+    eternity
+}
+if EC12 completions < 5 {
+    notify "Running EC12x5"
+    infinity
+    eternity respec
+    studies nowait purchase FULL
+    auto eternity off
+    start EC12
+    wait pending completions >= 5
+    eternity
+}
+
+notify "Preparing for dialtion"
+if total TT < 12900 {
+    notify "Farming 12900 total TT"
+    infinity
+    eternity respec
+    studies nowait purchase FULL
+    auto eternity 15s
+    wait total TT >= 12900
+    auto eternity off
+}
+unlock dilation
+if TP <= 0 {
+    infinity
+    eternity respec
+    studies nowait purchase DIL
+    auto eternity off
+    until TP > 0 {
+        start dilation
+        wait pending TP > TP
+        pause 200ms
+        eternity
+    }
+}
+
+if EC11 completions < 5 {
+    notify "Running EC11x5"
+    infinity
+    eternity respec
+    studies nowait purchase ECXI
+    auto eternity off
+    start EC11
+    wait pending completions >= 5
+    eternity
+}
+
+if TP <= 10000000000000000 {
+    infinity
+    eternity respec
+    studies nowait purchase DIL
+    auto eternity off
+    until TP > 10000000000000000 {
+        start dilation
+        wait pending TP > TP
+        pause 200ms
+        eternity
+    }
+}
+if EP < 1e6500 {
+    infinity
+    eternity respec
+    studies nowait purchase FULL
+    auto eternity 10s
+    wait EP > 1e6500
+}
+if TP <= 100000000000000000000 {
+    infinity
+    eternity respec
+    studies nowait purchase DIL
+    auto eternity off
+    until TP > 100000000000000000000 {
+        start dilation
+        wait pending TP > TP
+        pause 200ms
+        eternity
+    }
+}
+if EP < 1e8200 {
+    infinity
+    eternity respec
+    studies nowait purchase FULL
+    auto eternity 15s
+    wait EP > 1e8200
+}
+if TP <= 5e23 {
+    infinity
+    eternity respec
+    studies nowait purchase DIL
+    auto eternity off
+    until TP > 5e23 {
+        start dilation
+        wait pending TP > TP
+        pause 200ms
+        eternity
+    }
+}
+if EP < 1e8800 {
+    infinity
+    eternity respec
+    studies nowait purchase FULL
+    auto eternity 30s
+    wait EP > 1e8800
+}
+if EP < 1e8950 {
+    infinity
+    eternity respec
+    studies nowait purchase FULL
+    auto eternity 1m
+    wait EP > 1e8950
+}
+if EP < 1e9500 {
+    infinity
+    eternity respec
+    studies nowait purchase FULL
+    auto eternity 5m
+    wait EP > 1e9500
+}
+

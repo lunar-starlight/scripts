@@ -1,0 +1,1 @@
+sudo OpenCorsairLink --device 0 --fan mode=3

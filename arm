@@ -1,0 +1,1 @@
+aur -U https://archive.archlinux.org/packages/.all/$(curl -s https://archive.archlinux.org/packages/.all/index.0.xz | unxz | grep $1 | fzf).pkg.tar.zst

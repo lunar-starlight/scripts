@@ -1,0 +1,1 @@
+echo -e "51\n213\n15\n213\n51\n0" | while read I; do tput setab $I; echo -e "\n\n"; done

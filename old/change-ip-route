@@ -1,0 +1,4 @@
+sudo ip route add default via 10.0.0.1 dev enp6s0 proto dhcp src 10.0.0.100 metric 1001
+sudo ip route add 10.0.0.0/8 dev enp6s0 proto dhcp scope link src 10.0.0.100 metric 1001
+sudo ip route flush default via 10.0.0.1 dev enp6s0 proto dhcp src 10.0.0.100 metric 1003
+sudo ip route flush 10.0.0.0/8 dev enp6s0 proto dhcp scope link src 10.0.0.100 metric 1003

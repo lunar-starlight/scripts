@@ -1,0 +1,17 @@
+#!/bin/zsh
+
+HEADPHONES="alsa_output.pci-0000_09_00.3.pro-output-4"
+SPEAKERS="alsa_output.pci-0000_09_00.3.pro-output-0"
+
+CURRENT_OUTPUT=($(pactl get-default-sink))
+#INPUTS=($(pactl list-sink-inputs | grep index | awk '{print $2}'))
+if [[ $CURRENT_OUTPUT = $HEADPHONES ]]
+then
+	NEW_OUTPUT=$SPEAKERS
+else
+	NEW_OUTPUT=$HEADPHONES
+fi
+echo $NEW_OUTPUT
+pactl set-default-sink $NEW_OUTPUT
+#for i in ${INPUTS[*]}; do pactl move-sink-input $i $NEW_OUTPUT  &> /dev/null; done
+

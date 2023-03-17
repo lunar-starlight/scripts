@@ -1,0 +1,2 @@
+playerctld unshift
+qdbus $(qdbus | grep "StatusNotifierHost") /org/kde/osdService showText '' $(playerctl -l | head -n 1)

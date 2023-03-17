@@ -1,0 +1,5 @@
+sudo iptables -D OUTPUT -d 162.159.135.232 -j DROP
+sudo iptables -D OUTPUT -d 162.159.136.232 -j DROP
+sudo iptables -D OUTPUT -d 162.159.137.232 -j DROP
+sudo iptables -D OUTPUT -d 162.159.138.232 -j DROP
+sudo iptables -D OUTPUT -d 162.159.128.233 -j DROP

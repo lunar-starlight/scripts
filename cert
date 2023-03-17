@@ -1,0 +1,7 @@
+source /home/muf/.scripts/porkbun
+acme.sh --issue --dns dns_porkbun -d muf.moe -d "*.muf.moe"
+acme.sh --install-cert -d muf.moe \
+--cert-file /etc/nginx/ssl/muf.moe/cert \
+--key-file /etc/nginx/ssl/muf.moe/key \
+--fullchain-file /etc/nginx/ssl/muf.moe/fullchain \
+--reloadcmd "systemctl reload nginx"

@@ -1,0 +1,21 @@
+#!/bin/python
+import sys
+
+TESTING = False
+XCOMPOSE_FILE = ("/tmp" if TESTING else "") + "/home/muf/.XCompose"
+KMONAD_FILE = ("/tmp" if TESTING else "") + "/home/muf/.config/kmonad/g815.kbd"
+
+if len(sys.argv) < 3:
+    quit()
+
+code = sys.argv[1]
+char = sys.argv[2]
+comment = sys.argv[3:]
+
+with open(XCOMPOSE_FILE, "a") as f:
+    f.write("<Multi_key> <{}> : \"{}\" # {}\n".format("> <".join(code), char, " ".join(comment)))
+
+with open(KMONAD_FILE, "a") as f:
+    f.write("""(defalias\n  {} (tap-macro ralt {})\n)\n""".format(code, " ".join(code)))
+
+print(f"Added {char} as {code}")

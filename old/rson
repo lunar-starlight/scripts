@@ -1,0 +1,2 @@
+source /home/muf/scripts/rsoff
+redshift -l 46.056946:14.505751 -t 2800:2600 &
