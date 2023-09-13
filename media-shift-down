@@ -1,2 +1,6 @@
 playerctld unshift
+if [[ $(playerctl -l | head -n 1) = "plasma-browser-integration" ]]
+then
+	playerctld unshift
+fi
 qdbus $(qdbus | grep "StatusNotifierHost") /org/kde/osdService showText '' $(playerctl -l | head -n 1)

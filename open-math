@@ -1,0 +1,1 @@
+fd -t f "$1" ~/Documents/maths/ -x echo {} $$ {/} | fzf --with-nth 2.. -d "$$" --preview "pdftotext {1} -" --bind "enter:become($PDF_VIEWER {1} 2>/dev/null &)"

@@ -3,7 +3,7 @@ import xerox as cb
 import re
 
 def url2uri(s):
-    return re.sub(r'^https://open.spotify.com/(.*)/(.*)\?si=.*',
+    return re.sub(r'^https://open.spotify.com/(.*)/([^\?]*)(\?si=.*)?',
                   r'spotify:\1:\2', s)
  
 

@@ -11,7 +11,7 @@ then
 else
 	NEW_OUTPUT=$HEADPHONES
 fi
-echo $NEW_OUTPUT
+#echo $NEW_OUTPUT
 pactl set-default-sink $NEW_OUTPUT
 #for i in ${INPUTS[*]}; do pactl move-sink-input $i $NEW_OUTPUT  &> /dev/null; done
 

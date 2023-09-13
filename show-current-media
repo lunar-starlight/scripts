@@ -1,0 +1,1 @@
+/home/muf/.scripts/show-toast $(playerctl -l | head -n 1 | awk -F. '{ print $1 }')

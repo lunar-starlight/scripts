@@ -1,0 +1,11 @@
+#!/bin/bash
+playerctld $1
+if [[ $(/home/muf/.scripts/media-get-current) = "plasma-browser-integration" ]]
+then
+	playerctld $1
+fi
+if [[ $(/home/muf/.scripts/media-get-current) = "kdeconnect" ]]
+then
+	playerctld $1
+fi
+/home/muf/.scripts/media-show-current

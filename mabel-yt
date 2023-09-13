@@ -1,0 +1,5 @@
+#!/bin/sh
+OLDDIR=$(pwd)
+cd /tmp
+yt-dlp -f mp4 $1
+cd $OLDDIR
